@@ -42,13 +42,13 @@ INSERT INTO ProductsCategory (Category_ID, Category_Name) VALUES (4, 'Snacks and
 INSERT INTO ProductsCategory (Category_ID, Category_Name) VALUES (5, 'Canned Foods');
 
 
-INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (1, 'Milk-AlMarai', 50, 8, TO_DATE('2024-05-21', 'YYYY-MM-DD'), 1);
+INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (1, 'Milk-AlMarai', 50, 0, TO_DATE('2024-05-21', 'YYYY-MM-DD'), 1);
 INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (2, 'Milk-juhayna', 45, 50, TO_DATE('2024-03-21', 'YYYY-MM-DD'), 1);
 INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (3, 'Mozzarella Cheese-domty', 85, 13, TO_DATE('2024-05-22', 'YYYY-MM-DD'), 1);
 INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (4, 'Mozzarella Cheese-panda', 70, 30, TO_DATE('2024-06-12', 'YYYY-MM-DD'), 1);
 INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (5, 'Feta Cheese-domty', 30, 25, TO_DATE('2024-05-29', 'YYYY-MM-DD'), 1);
 INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (6, 'Feta Cheese-panda', 35, 15, TO_DATE('2024-05-14', 'YYYY-MM-DD'), 1);
-INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (7, 'Yoghurt-AlMarai',26, 4, TO_DATE('2024-04-10', 'YYYY-MM-DD'), 1);
+INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (7, 'Yoghurt-AlMarai',26, 0, TO_DATE('2024-04-10', 'YYYY-MM-DD'), 1);
 INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (8, 'Yoghurt-juhayna',24, 30, TO_DATE('2024-06-10', 'YYYY-MM-DD'), 1);
 INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (9, 'Yoghurt-Danone',25, 20, TO_DATE('2024-02-10', 'YYYY-MM-DD'), 1);
 
@@ -57,7 +57,7 @@ INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, 
 INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (12, 'Soda drink-V7', 20, 60, TO_DATE('2024-02-23', 'YYYY-MM-DD'), 2);
 INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (13, 'Soda drink-Spiro Spathis', 10, 30, TO_DATE('2024-06-13', 'YYYY-MM-DD'), 2);
 INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (14, 'Bottled Water-Elano', 15 , 75, TO_DATE('2024-05-25', 'YYYY-MM-DD'), 2);
-INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (15, 'Bottled Water-Aqua Delta', 13 , 5, TO_DATE('2024-04-22', 'YYYY-MM-DD'), 2);
+INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (15, 'Bottled Water-Aqua Delta', 13 , 0, TO_DATE('2024-04-22', 'YYYY-MM-DD'), 2);
 
 
 INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (16, 'Frozen Spinach-basma', 35 , 23, TO_DATE('2024-05-12', 'YYYY-MM-DD'), 3); 
@@ -70,9 +70,9 @@ INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, 
 
 INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (22, 'Corn-Rose Garden', 50 , 30, TO_DATE('2024-06-02', 'YYYY-MM-DD'), 5);
 INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (23, 'Tomato Paste-Rose Garden', 55 , 18, TO_DATE('2024-02-02', 'YYYY-MM-DD'), 5);
-INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (24, 'Tomato Paste-harvest', 55 , 4, TO_DATE('2024-05-12', 'YYYY-MM-DD'), 5);
+INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (24, 'Tomato Paste-harvest', 55 , 0, TO_DATE('2024-05-12', 'YYYY-MM-DD'), 5);
 INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (25, 'Tuna-Rose Garden', 100 , 50, TO_DATE('2024-03-24', 'YYYY-MM-DD'), 5);
-INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (26, 'Tuna-Dolphin', 85 , 5, TO_DATE('2024-06-24', 'YYYY-MM-DD'), 5);
+INSERT INTO Products (Product_ID, Product_Name, Product_Price, Number_Of_Units, Expiary_Date, Category_ID) VALUES (26, 'Tuna-Dolphin', 85 , 0, TO_DATE('2024-06-24', 'YYYY-MM-DD'), 5);
 
 INSERT INTO Supplies (Order_ID, Product_ID, Product_Name, Number_Of_Units_Ordered, Price_Paid) VALUES (1, 1, 'Milk-AlMarai', 30, 1500);
 INSERT INTO Supplies (Order_ID, Product_ID, Product_Name, Number_Of_Units_Ordered, Price_Paid) VALUES (2, 3, 'Mozzarella Cheese-domty', 50, 4250);
