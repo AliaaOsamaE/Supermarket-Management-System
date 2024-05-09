@@ -49,11 +49,11 @@ namespace WindowsFormsApplication1
             conn.Open();
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = conn;
-            int id;
+            int id = -1 ;
 
             string password = textBox2.Text;
             string hashedPassword = HashPassword(password);
-            if (!string.IsNullOrEmpty(textBox1.Text) && int.TryParse(textBox1.Text, out id) && password != "")
+            if (!string.IsNullOrEmpty(textBox1.Text) && int.TryParse(textBox1.Text, out id) || password != "")
             {
                 OracleCommand empInfo = new OracleCommand();
                 empInfo.Connection = conn;
