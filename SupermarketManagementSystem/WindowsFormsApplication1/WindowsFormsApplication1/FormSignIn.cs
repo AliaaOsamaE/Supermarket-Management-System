@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +14,7 @@ namespace WindowsFormsApplication1
 {
     public partial class FormSignIn : Form
     {
-        string ordb ="Data Source=orcl;User Id=sys;password=Administrator1;DBA Privilege = SYSDBA;";
+        string ordb = "Data Source=ORCL;User Id=hr;Password=HR;";
         OracleConnection conn;
         DateTime formLoadTime = DateTime.Now;
         public FormSignIn()
@@ -49,11 +49,11 @@ namespace WindowsFormsApplication1
             conn.Open();
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = conn;
-            int id = -1 ;
+            int id;
 
             string password = textBox2.Text;
             string hashedPassword = HashPassword(password);
-            if (!string.IsNullOrEmpty(textBox1.Text) && int.TryParse(textBox1.Text, out id) || password != "")
+            if (!string.IsNullOrEmpty(textBox1.Text) && int.TryParse(textBox1.Text, out id) && password != "")
             {
                 OracleCommand empInfo = new OracleCommand();
                 empInfo.Connection = conn;
@@ -105,14 +105,16 @@ namespace WindowsFormsApplication1
             }
             else
             {
-                if (string.IsNullOrEmpty(textBox1.Text) || int.TryParse(textBox1.Text, out id))
+                
+                if (string.IsNullOrEmpty(textBox1.Text) || password == "")
                 {
-                    MessageBox.Show("Please enter a valid id");
+                    MessageBox.Show("Incomplete Data");
                 }
-                if (password == "")
+                else if(!int.TryParse(textBox1.Text, out id))
                 {
-                    MessageBox.Show("Please enter your password");
+                    MessageBox.Show("Wrong Id or Password");
                 }
+                
             }
             textBox1.Text = "";
             textBox2.Text = "";
