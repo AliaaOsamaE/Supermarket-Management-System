@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA03C492-0110-49BD-A9A1-27E96DC735B1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SuperMarketSystem</RootNamespace>
+    <AssemblyName>SuperMarketSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\app\ranee\product\11.2.0\dbhome_1\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClerkReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClerkReportForm.Designer.cs">
+      <DependentUpon>ClerkReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClerkRetrieveDataReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClerkRetrieveDataReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EmployeesReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesReportForm.Designer.cs">
+      <DependentUpon>EmployeesReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesrReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesrReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormControlPrices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormControlPrices.Designer.cs">
+      <DependentUpon>FormControlPrices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFinalizeUserPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFinalizeUserPayment.Designer.cs">
+      <DependentUpon>FormFinalizeUserPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGradingEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGradingEmployees.Designer.cs">
+      <DependentUpon>FormGradingEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManageExpiredProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageExpiredProducts.Designer.cs">
+      <DependentUpon>FormManageExpiredProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManagerTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManagerTasks.Designer.cs">
+      <DependentUpon>FormManagerTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderProducts.Designer.cs">
+      <DependentUpon>FormOrderProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSignIn.Designer.cs">
+      <DependentUpon>FormSignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProductsReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsReportForm.Designer.cs">
+      <DependentUpon>ProductsReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sign_Up_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign_Up_Form.Designer.cs">
+      <DependentUpon>Sign_Up_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome_form.Designer.cs">
+      <DependentUpon>Welcome_form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ClerkReportForm.resx">
+      <DependentUpon>ClerkReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClerkRetrieveDataReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClerkRetrieveDataReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesReportForm.resx">
+      <DependentUpon>EmployeesReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesrReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EmployeesrReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControlPrices.resx">
+      <DependentUpon>FormControlPrices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFinalizeUserPayment.resx">
+      <DependentUpon>FormFinalizeUserPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGradingEmployees.resx">
+      <DependentUpon>FormGradingEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageExpiredProducts.resx">
+      <DependentUpon>FormManageExpiredProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManagerTasks.resx">
+      <DependentUpon>FormManagerTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderProducts.resx">
+      <DependentUpon>FormOrderProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSignIn.resx">
+      <DependentUpon>FormSignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProductsReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsReportForm.resx">
+      <DependentUpon>ProductsReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Sign_Up_Form.resx">
+      <DependentUpon>Sign_Up_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome_form.resx">
+      <DependentUpon>Welcome_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
